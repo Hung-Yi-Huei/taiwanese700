@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>臺灣閩南語測驗</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>臺灣閩南語測驗</h1>
+        <div id="quiz-container">
+            <div id="question-container">
+                <h2 id="question">準備開始測驗</h2>
+            </div>
+            <div id="options-container">
+                <!-- 選項會由 JavaScript 動態生成 -->
+            </div>
+            <div id="controls">
+                <button id="start-btn">開始測驗</button>
+                <button id="next-btn" style="display: none;">下一題</button>
+            </div>
+            <div id="score-container">
+                <p>分數: <span id="score">0</span></p>
+            </div>
+        </div>
+    </div>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Microsoft JhengHei", "微軟正黑體", sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #1a73e8;
+    margin-bottom: 2rem;
+}
+
+#quiz-container {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+#question-container {
+    margin-bottom: 1.5rem;
+}
+
+#question {
+    font-size: 1.5rem;
+    color: #202124;
+    margin-bottom: 1rem;
+}
+
+#options-container {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.option-btn {
+    padding: 1rem;
+    border: 2px solid #e8eaed;
+    border-radius: 8px;
+    background: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.option-btn:hover {
+    background: #f8f9fa;
+    border-color: #1a73e8;
+}
+
+.option-btn.correct {
+    background: #e6f4ea;
+    border-color: #137333;
+}
+
+.option-btn.wrong {
+    background: #fce8e6;
+    border-color: #c5221f;
+}
+
+#controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background: #1a73e8;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #1557b0;
+}
+
+#score-container {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin: 1rem;
+        padding: 10px;
+    }
+    
+    #quiz-container {
+        padding: 1rem;
+    }
+    
+    #question {
+        font-size: 1.2rem;
+    }
+}
+.option-btn {
+    padding: 1rem;
+    border: 2px solid #e8eaed;
+    border-radius: 8px;
+    background: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #000000; /* 改為黑色文字 */
+    font-weight: 500; /* 加粗一點提高清晰度 */
+}
+
+.option-btn:hover {
+    background: #f8f9fa;
+    border-color: #1a73e8;
+    color: #000000; /* 確保懸停時也是黑色 */
+}
+
+.option-btn.correct {
+    background: #e6f4ea;
+    border-color: #137333;
+    color: #000000; /* 確保正確答案時也是黑色 */
+}
+
+.option-btn.wrong {
+    background: #fce8e6;
+    border-color: #c5221f;
+    color: #000000; /* 確保錯誤答案時也是黑色 */
+}
